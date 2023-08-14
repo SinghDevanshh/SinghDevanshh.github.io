@@ -15,7 +15,4 @@
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-
-            // Alert the user that the text has been copied
-            alert('Text copied: ' + text);
         }
