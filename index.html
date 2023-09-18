@@ -27,6 +27,7 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+     <link rel="stylesheet" href="css/button.css">
 
 
 </head>
@@ -144,7 +145,7 @@
                             <div class="item">
                                 <div class="testimonials-thumb d-flex">
                                     <div class="testimonials-image">
-                                        <img src="images/Projects/translator.jpeg" class="img-fluid translator" alt="testimonials image">
+                                        <a href="https://github.com/SinghDevanshh/Language-Translator-Using-IBM-Watson-API.git"><img src="images/Projects/translator.jpeg" class="img-fluid translator" alt="Language-Translator-Using-IBM-Watson-API"></a>
                                         <span>Self Project</span>
                                     </div>
 
@@ -157,7 +158,7 @@
                             <div class="item">
                               <div class="testimonials-thumb d-flex">
                                   <div class="testimonials-image">
-                                      <img src="images/Projects/LinearLab.png" class="img-fluid LinearLab" alt="testimonials image">
+                                    <a href="https://github.com/SinghDevanshh/Linear-Lab.git"><img src="images/Projects/LinearLab.png" class="img-fluid LinearLab" alt="Linear-Lab"></a>
                                       <span>Group Project</span>
                                   </div>
 
@@ -170,7 +171,7 @@
                             <div class="item">
                                 <div class="testimonials-thumb d-flex">
                                     <div class="testimonials-image">
-                                        <img src="images/Projects/Motion Detector.png" class="img-fluid Motion-Detector" alt="testimonials image" >
+                                        <a href="https://github.com/SinghDevanshh/Motion_Detector.git"><img src="images/Projects/Motion Detector.png" class="img-fluid Motion-Detector" alt="Motion-Detector" ></a>
                                         <span>Self Project</span>
                                     </div>
 
@@ -183,8 +184,8 @@
                             <div class="item">
                               <div class="testimonials-thumb d-flex">
                                   <div class="testimonials-image">
-                                      <img src="images/Projects/TimeZone.png" class="img-fluid timeZone" alt="testimonials image">
-                                      <!-- <h6 class="mb-0">Self Project</h6> -->
+                                    <a href=""></a>
+                                      <img src="images/Projects/TimeZone.png" class="img-fluid timeZone" alt="timeZone-Detector">
                                       <span>Self Project</span>
                                   </div>
 
@@ -208,7 +209,7 @@
         <div class="row">
 
           <div class="col-lg-6 col-md-6 col-12">
-            <form action="https://formspree.io/f/maygywgy" method="POST" class="contact-form webform"  role="form">
+            <form action="https://formspree.io/f/maygywgy" method="POST" class="contact-form webform"  role="form" id="customForm">
                 
                 <div class="form-group d-flex flex-column-reverse">
                     <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
@@ -228,8 +229,32 @@
                     <label for="cf-message" class="webform-label">Message</label>
                 </div>
 
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+                <button class="sendit"  onclick="delaySubmit(event)" >
+                    <span class="default">Send</span>
+                    <span class="success">Sent</span>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </button>
+
+                <script>
+                    function delaySubmit(event) {
+                        event.preventDefault(); // Prevent the form from submitting immediately
+                        var form = document.getElementById("customForm");
+                
+                        var delay = 2000;
+                
+                        // Disable the button during the delay
+                        event.target.disabled = true;
+                
+                        setTimeout(function () {
+                            form.submit(); // Submit the form after the delay
+                            event.target.disabled = false; // Re-enable the button
+                        }, delay);
+                    }
+                </script>
+
             </form>
+            
           </div>
 
             <div class="mx-auto col-lg-4 col-md-6 col-12">
@@ -241,7 +266,7 @@
                 </p>
 
                 <ul class="social-links mt-2">
-                    <li><a href="www.linkedin.com/in/devansh--singh" rel="linkedin" ><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Devansh Singh | LinkedIn" height="50" width="40" /></a></li>
+                    <li><a href="https://linkedin.com/in/devansh--singh" rel="linkedin" ><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Devansh Singh | LinkedIn" height="50" width="40" /></a></li>
                     <li><a href="https://discordapp.com/users/1031668946702704670" rel="discord" ><img src="https://cdn.simpleicons.org/discord" alt="Devansh Singh | Discord" height="50" width="40" /></a></li>
                     <li><a href="https://github.com/SinghDevanshh" rel="github" class=""><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/888aff31e1d26dd2a6acf6afebbc34970aeb0118/src/images/icons/Social/github.svg" alt="Devansh Singh | github" height="50" width="40" class="github" /></a></li>
                 </ul>
@@ -260,6 +285,8 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
      <script src="js/index.js"></script>
+     <script src="js/gsap.mim.js"></script>
+     <script src="js/button_anim.js"></script>
 
 </body>
 </html>
