@@ -9,6 +9,8 @@ document.querySelectorAll('.sendit').forEach(button => {
         const Message =  document.getElementById("cf-message").value;
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+        console.log(Full_Name!=="" && Message!=="")
+
         if(!button.classList.contains('active') && email_submit.match(validRegex) && Full_Name!=="" && Message!=="") {
 
             button.classList.add('active');
