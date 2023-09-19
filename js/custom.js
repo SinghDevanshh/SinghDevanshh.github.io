@@ -15,7 +15,7 @@
         
         var b = $(window).scrollTop();
         
-        if( b > 72 ){       
+        if( b > 20 ){       
             $(".navbar").addClass("scroll");
         } else {
             $(".navbar").removeClass("scroll");
@@ -36,7 +36,6 @@
             },
             1200:{
                 items:3,
-                loop:false
             }
         }
     })

@@ -2,22 +2,38 @@
     border: 5px solid #555;
 }
 
-.Motion-Detector{
-    height: 150px;
-    width: 200px;
+.LinearLab_img{
+    padding-bottom: 27%;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto/2;
+    width: auto/10;
+    
 }
 
-.LinearLab{
-    height: 150px;
-    width: 405px;
+
+.Motion-Detector_img{
+    padding-bottom: 35%;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto/2;
+    width: auto/10;
 }
 
-.timeZone{
-    height: 150px;
-    width: 405px;
+
+.timeZone_img{
+    padding-bottom: 21.5%;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto/2;
+    width: auto/10;
+    
 }
 
-.translator{
-    height: 150px;
-    width: 405px;
+
+.translator_img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    width: auto/9;
 }
