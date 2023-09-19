@@ -552,6 +552,7 @@ https://www.tooplate.com/view/2120-ben-resume
   @media screen and (max-width: 1200px) {
     h1 {
         font-size: 42px;
+        text-align: center;
     }
 
     h2 {
@@ -576,6 +577,7 @@ https://www.tooplate.com/view/2120-ben-resume
     .hero-title {
       font-size: 1.8em;
       padding-bottom: 1rem;
+      text-align: center;
     }
 
     .email-link {

@@ -1,6 +1,26 @@
 .skills{
     border: 5px solid #555;
 }
+.latex sub {
+    vertical-align: -0.1ex;
+    margin-left: -0.1667em;
+    margin-right: -0.025em;
+  }
+  
+  
+  .latex sub, .latex sup{
+    font-size: 0.9em;
+    text-transform:uppercase;
+  
+  }
+  .latex sup {
+    font-size: 0.85em;
+    vertical-align: -0.2em;
+    margin-left: -0.26em;
+    margin-right: -0.05em;
+  }
+
+
 
 .LinearLab_img{
     padding-bottom: 27%;
@@ -37,3 +57,22 @@
     height: auto;
     width: auto/9;
 }
+
+.wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
