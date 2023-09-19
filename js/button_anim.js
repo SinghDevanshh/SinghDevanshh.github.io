@@ -4,7 +4,12 @@ document.querySelectorAll('.sendit').forEach(button => {
 
     button.addEventListener('click', e => {
 
-        if(!button.classList.contains('active')) {
+        const email_submit =  document.getElementById("cf-email").value;
+        const Full_Name =  document.getElementById("cf-name").value;
+        const Message =  document.getElementById("cf-message").value;
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+        if(!button.classList.contains('active') && email_submit.match(validRegex) && Full_Name!=="" && Message!=="") {
 
             button.classList.add('active');
 
