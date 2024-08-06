@@ -58,6 +58,32 @@
     width: auto/9;
 }
 
+
+.prediction_model{
+  padding-bottom: 27%;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto/2;
+  width: auto/10;
+  
+}
+
+.space_shooter{
+  padding-bottom: 37%;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto/2;
+  width: auto/10;
+}
+
+.space_jump{
+  padding-bottom: 37%;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto/2;
+  width: auto/10;
+}
+
 .wave {
     animation-name: wave-animation;  
     animation-duration: 2.5s;        
